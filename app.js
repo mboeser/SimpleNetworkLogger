@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    console.log(req.query);
+    //console.log(req.query);
     const start_time = process.hrtime();
     res.set('Content-Type', 'text/html');
     res.write(`<!doctype html>
@@ -66,7 +66,7 @@ app.get('/', (req, res) => {
     (async () => {
 
         let i = 1;
-        const browser = await puppeteer.launch({args: ['--no-sandbox']});
+        const browser = await puppeteer.launch({args: ['--no-sandbox','--disable-setuid-sandbox']});
         const page = await browser.newPage();
 
         page.on('response', response => {
