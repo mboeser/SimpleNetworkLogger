@@ -66,7 +66,7 @@ app.get('/', (req, res) => {
     (async () => {
 
         let i = 1;
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({args: ['--no-sandbox']});
         const page = await browser.newPage();
 
         page.on('response', response => {
