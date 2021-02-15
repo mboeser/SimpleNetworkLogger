@@ -1,0 +1,15 @@
+{
+  "name": "tag-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Boeser <mboeser@yahoo.com> (https://github.com/mboeser)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^7.1.0"
+  }
+}
